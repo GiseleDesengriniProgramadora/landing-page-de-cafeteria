@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aroma Café - Experiência única em café</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>Aroma Café</h1>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">Sobre</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#testimonials" class="nav-link">Depoimentos</a></li>
+          <li><a href="#contact" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Bem-vindo ao Aroma Café</h1>
+        <h2>Onde cada xícara conta uma história</h2>
+        <p>
+          Experimente nossos cafés especiais selecionados dos melhores
+          produtores do mundo
+        </p>
+        <a href="#menu" class="btn">Ver Menu</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Nossa História</h2>
+            <p>
+              Fundado em 2010, o Aroma Café nasceu da paixão por café de
+              qualidade e do desejo de criar um espaço acolhedor onde as pessoas
+              pudessem se conectar.
+            </p>
+            <p>
+              Trabalhamos diretamente com produtores que compartilham nossa
+              visão de sustentabilidade e qualidade, garantindo que cada grão
+              seja cultivado com cuidado e respeito ao meio ambiente.
+            </p>
+            <a href="#contact" class="btn">Visite-nos</a>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+              alt="Interior da cafeteria"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="container">
+        <h2>Nosso Menu</h2>
+        <div class="menu-tabs">
+          <div class="tab active" data-tab="coffee">Cafés</div>
+          <div class="tab" data-tab="pastries">Doces</div>
+          <div class="tab" data-tab="breakfast">Salgados</div>
+        </div>
+        <div class="menu-content">
+          <div class="menu-items active" id="coffee-menu">
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd"
+                alt="Espresso"
+              />
+              <div class="item-info">
+                <h3>Espresso</h3>
+                <p>Café puro e intenso, extraído sob pressão</p>
+                <span class="price">R$ 6,00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1534778101976-62847782c213"
+                alt="Cappuccino"
+              />
+              <div class="item-info">
+                <h3>Cappuccino</h3>
+                <p>Espresso com leite vaporizado e espuma cremosa</p>
+                <span class="price">R$ 9,50</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1517701604599-bb29b565090c"
+                alt="Latte"
+              />
+              <div class="item-info">
+                <h3>Latte</h3>
+                <p>Espresso suavizado com leite cremoso</p>
+                <span class="price">R$ 10,00</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-items" id="pastries-menu">
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2"
+                alt="Croissant"
+              />
+              <div class="item-info">
+                <h3>Croissant</h3>
+                <p>Massa folhada crocante e amanteigada</p>
+                <span class="price">R$ 8,00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1551024506-0bccd828d307"
+                alt="Bolo de Chocolate"
+              />
+              <div class="item-info">
+                <h3>Bolo de Chocolate</h3>
+                <p>Bolo úmido com cobertura de ganache</p>
+                <span class="price">R$ 12,00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1603532648955-039310d9ed75"
+                alt="Cheesecake"
+              />
+              <div class="item-info">
+                <h3>Cheesecake</h3>
+                <p>Torta cremosa com calda de frutas vermelhas</p>
+                <span class="price">R$ 14,00</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-items" id="breakfast-menu">
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1603532648955-039310d9ed75"
+                alt="Sanduíche Natural"
+              />
+              <div class="item-info">
+                <h3>Sanduíche Natural</h3>
+                <p>Pão integral com frango, cream cheese e vegetais</p>
+                <span class="price">R$ 15,00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1513442542250-854d436a73f2"
+                alt="Quiche"
+              />
+              <div class="item-info">
+                <h3>Quiche de Legumes</h3>
+                <p>Massa crocante com recheio cremoso de legumes</p>
+                <span class="price">R$ 18,00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1525351484163-7529414344d8"
+                alt="Pão de Queijo"
+              />
+              <div class="item-info">
+                <h3>Pão de Queijo</h3>
+                <p>Tradicional quitute mineiro, quentinho e macio</p>
+                <span class="price">R$ 5,00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="testimonial-slider">
+          <div class="testimonial-slide active">
+            <div class="testimonial">
+              <div class="quote">
+                <i class="fas fa-quote-left"></i>
+                <p>
+                  O melhor café que já provei! O ambiente é acolhedor e o
+                  atendimento é excelente. Recomendo a todos!
+                </p>
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <div class="client">
+                <h3>Maria Silva</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial">
+              <div class="quote">
+                <i class="fas fa-quote-left"></i>
+                <p>
+                  Frequento o Aroma Café há anos e nunca me decepcionei. Os
+                  doces são divinos e o cappuccino é perfeito!
+                </p>
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <div class="client">
+                <h3>João Oliveira</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial">
+              <div class="quote">
+                <i class="fas fa-quote-left"></i>
+                <p>
+                  Lugar perfeito para trabalhar remotamente. Wi-Fi rápido, café
+                  delicioso e ambiente tranquilo. Meu escritório favorito!
+                </p>
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <div class="client">
+                <h3>Ana Souza</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <div class="prev-btn"><i class="fas fa-chevron-left"></i></div>
+          <div class="dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+          </div>
+          <div class="next-btn"><i class="fas fa-chevron-right"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Visite-nos</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Endereço</h3>
+                <p>Rua das Flores, 123 - Centro</p>
+                <p>São Paulo, SP</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>Horário de Funcionamento</h3>
+                <p>Segunda a Sexta: 7h às 20h</p>
+                <p>Sábados e Domingos: 8h às 19h</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Contato</h3>
+                <p>Telefone: (11) 5555-1234</p>
+                <p>Email: contato@aromacafe.com.br</p>
+              </div>
+            </div>
+            <div class="social-media">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Envie-nos uma mensagem</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Seu nome"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Seu email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Sua mensagem"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>Aroma Café</h2>
+            <p>Onde cada xícara conta uma história</p>
+          </div>
+          <div class="footer-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#testimonials">Depoimentos</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </div>
+          <div class="newsletter">
+            <h3>Receba nossas novidades</h3>
+            <p>Inscreva-se para receber promoções e eventos especiais</p>
+            <form id="newsletter-form">
+              <input type="email" placeholder="Seu email" required />
+              <button type="submit" class="btn">Inscrever</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Aroma Café. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
